@@ -117,7 +117,7 @@ WHERE code = "ABC";
 
 ```sql
 ALTER TABLE ${user}_ice.airlines
-EXECUTE rollback("<snapshot-id>");
+EXECUTE rollback(<snapshot-id>);
 
 -- should not show any records
 SELECT * FROM ${user}_ice.airlines
